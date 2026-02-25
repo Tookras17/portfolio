@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap');
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+  body {
+    background-color: #09090b;
+    color: #a1a1aa;
+    font-family: 'DM Mono', 'Courier New', monospace;
+    overflow-x: hidden;
+  }
+
+  ::selection { background-color: #a3e635; color: #09090b; }
+
+  ::-webkit-scrollbar       { width: 3px; }
+  ::-webkit-scrollbar-track { background: #09090b; }
+  ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 2px; }
+}
+
+@layer components {
+  .section-label {
+    @apply block font-mono text-xs text-lime-400 tracking-widest uppercase mb-4;
+  }
+  .section-title {
+    @apply font-serif text-white font-normal tracking-tight;
+  }
+  .btn-primary {
+    @apply bg-lime-400 text-zinc-950 px-10 py-4 font-mono text-xs tracking-widest uppercase
+           hover:-translate-y-0.5 hover:bg-lime-300 transition-all duration-200 active:scale-95 cursor-pointer border-none;
+  }
+  .btn-outline {
+    @apply border border-zinc-800 text-zinc-600 px-12 py-4 font-mono text-xs tracking-widest uppercase
+           hover:border-zinc-600 hover:text-zinc-300 transition-all duration-200;
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(163, 230, 53, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(163, 230, 53, 0.05) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+}
+
+@layer utilities {
+  .writing-vertical { writing-mode: vertical-rl; }
+  .text-stroke-zinc { -webkit-text-stroke: 1px #3f3f46; color: transparent; }
+}
