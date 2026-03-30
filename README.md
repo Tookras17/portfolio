@@ -1,6 +1,5 @@
-# Portfolio — Alex Martin
+# Portfolio
 
-> React 18 · Vite 5 · Tailwind CSS 3
 
 ## Démarrage
 
