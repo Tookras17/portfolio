@@ -16,7 +16,7 @@ export const PROJECTS = [
     category: 'Web App',
     year: '2026',
     description: 'Refonte complète d\'un site web d\'une clinique médicale à Madagascar, intégration d\'une maquette via Figma — intégration d\'un formulaire de prise de rendez-vous en temps réel.',
-    tags: ['React', 'Tailinwind', 'PHP', 'Figma', 'Docker'],
+    tags: ['React', 'Tailwind', 'PHP', 'Figma', 'Docker'],
     accent: 'text-violet-400 border-violet-400',
     accentColor: '#a78bfa',
   }

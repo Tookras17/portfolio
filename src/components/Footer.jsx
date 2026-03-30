@@ -1,7 +1,5 @@
 const SOCIAL_LINKS = [
-  { label: 'GitHub',   href: 'https://github.com' },
-  { label: 'Dribbble', href: 'https://dribbble.com' },
-  { label: 'Twitter',  href: 'https://twitter.com' },
+  { label: 'GitHub',   href: 'https://github.com/Tookras17' },
 ]
 
 /**
@@ -9,8 +7,8 @@ const SOCIAL_LINKS = [
  */
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-900 px-10 py-7 flex flex-wrap justify-between items-center gap-4">
-      <small className="font-mono text-xs text-zinc-700 tracking-wider">
+    <footer className="flex flex-wrap items-center justify-between gap-4 px-10 border-t border-zinc-900 py-7">
+      <small className="font-mono text-xs tracking-wider text-zinc-700">
         © {new Date().getFullYear()} Took — Tous droits réservés
       </small>
       <nav className="flex gap-8">
@@ -20,7 +18,7 @@ export default function Footer() {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-xs text-zinc-700 tracking-wider hover:text-lime-400 transition-colors duration-200"
+            className="font-mono text-xs tracking-wider transition-colors duration-200 text-zinc-700 hover:text-lime-400"
           >
             {label}
           </a>
